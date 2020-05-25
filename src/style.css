@@ -1,0 +1,52 @@
+.secao_3, .secao_4, .secao_5{
+    background-color: rgba(0, 0, 0, 0.863);
+    border-style: solid;
+    border-color: rgb(0, 110, 255);
+    border-radius: 1px;
+}
+
+.h1_buscar{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.h1_dados{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#btn-buscar{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.inputs{
+    width: 80%;
+    align-self: center;
+}
+
+.input_nome{
+    margin-bottom: 10px;
+}
+
+.input_tipo{
+    margin-bottom: 10px;
+}
+
+.text_quemsomos{
+    text-align: center;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: rgb(0, 110, 255);
+    background: rgb(210, 51, 30);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.linha_secao_3{
+    padding-left: 15px;
+    padding-right: 15px;
+}
