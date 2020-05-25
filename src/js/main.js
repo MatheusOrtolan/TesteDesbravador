@@ -2,14 +2,12 @@
 const btnbuscar = document.getElementById("btn-buscar");
 
 //************ Chamada Get Usuario Git e getReposUsuarioGit *************//
-
 btnbuscar.onclick = () =>{
     getUsuarioGit();
     getReposUsuarioGit();
 }
 
 //************ Função getUsuarioGit *****************//
-
 function getUsuarioGit(){
 
     const nome = document.getElementById("nome").value;
@@ -30,11 +28,11 @@ function getUsuarioGit(){
                                 <img src="${data.avatar_url}" alt="..." width="200px">
                             </div>
                             <div id="info_usuario">
-                                <h1 style="color: white; font-size: 20px; margin-top:30px;">Usuário: ${data.login}</h1>
-                                <h1 style="color: white; font-size: 20px;">E-mail: ${data.email}</h1>
-                                <h1 style="color: white; font-size: 20px;">Bio: ${data.bio}</h1>
-                                <h1 style="color: white; font-size: 20px;">Nº Seguidores: ${data.followers}</h1>
-                                <h1 style="color: white; font-size: 20px; margin-bottom:30px;">Nº Seguindo: ${data.following}</h1>
+                                <h1 style="font-family: 'Jura', sans-serif; color: white; font-size: 20px; margin-top:30px;">Usuário: ${data.login}</h1>
+                                <h1 style="font-family: 'Jura', sans-serif; color: white; font-size: 20px;">E-mail: ${data.email}</h1>
+                                <h1 style="font-family: 'Jura', sans-serif; color: white; font-size: 20px;">Bio: ${data.bio}</h1>
+                                <h1 style="font-family: 'Jura', sans-serif; color: white; font-size: 20px;">Nº Seguidores: ${data.followers}</h1>
+                                <h1 style="font-family: 'Jura', sans-serif; color: white; font-size: 20px; margin-bottom:30px;">Nº Seguindo: ${data.following}</h1>
                             </div>
                         </div>
                     </section>`
@@ -48,7 +46,6 @@ function getUsuarioGit(){
 }
 
 //************ Função getReposUsuarioGit *****************//
-
 function getReposUsuarioGit(){
 
     const nome = document.getElementById("nome").value;
@@ -72,11 +69,11 @@ function getReposUsuarioGit(){
 
         data.forEach(function(element){
     
-        const html=`<h1 style="color: white; font-size:16px;">Nome: ${element.name} </h1>   
-                    <h1 style="color: white; font-size:16px;">Descrição: ${element.description} </h1>
-                    <h1 style="color: white; font-size:16px;">Nº Estrelas: ${element.stargazers_count} </h1>
-                    <h1 style="color: white; font-size:16px;">Linguagem: ${element.language} </h1>
-                    <h1 style="color: white; font-size:16px;">Link Git:<a href="https://api.github.com/repos/${element.full_name}"> Link</a></h1><br>`
+        const html=`<h1 style="font-family: 'Jura', sans-serif; color: white; font-size:16px;">Nome: ${element.name} </h1>   
+                    <h1 style="font-family: 'Jura', sans-serif; color: white; font-size:16px;">Descrição: ${element.description} </h1>
+                    <h1 style="font-family: 'Jura', sans-serif; color: white; font-size:16px;">Nº Estrelas: ${element.stargazers_count} </h1>
+                    <h1 style="font-family: 'Jura', sans-serif; color: white; font-size:16px;">Linguagem: ${element.language} </h1>
+                    <h1 style="font-family: 'Jura', sans-serif; color: white; font-size:16px;">Link Git:<a href="https://api.github.com/repos/${element.full_name}"> Link</a></h1><br>`
         document
         .querySelector('#info_repos')
         .insertAdjacentHTML('beforeend', html);
